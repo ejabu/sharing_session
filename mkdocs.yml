@@ -1,0 +1,32 @@
+site_name: Sharing Session
+theme:
+  name: material
+  features:
+    - content.code.annotate #
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+
+# Page tree
+nav:
+  - Solid Programming: index.md
+  - 1. Single: 1-single/overview.md
+  - 2. Open Close: 2-open-close/overview.md
+  - 3. Liskov: 3-liskov/overview.md
+  - 4. Interface: 4-interface/overview.md
+  - 5. Dependency: 5-dependency/overview.md
+
+dev_addr: localhost:5000
